@@ -9,8 +9,8 @@ The following defines a simple language, in which a program consists of assignme
 2. Report uninitialized variables; and 
 3. perform the assignments if there is no error and print out the values of all the variables after all the assignments are done.
 
-Program: 
-        AssignmentList
+## Program: 
+        Assignment*
   
     Assignment:
         Identifier = Exp;
@@ -38,3 +38,34 @@ Program:
 
     Digit:
         0|1|...|9
+
+## Sample inputs and outputs
+- Input 1
+x = 001;
+
+- Output 1
+error
+
+- Input 2
+x_2 = 0;
+
+- Output 2
+x_2 = 0
+
+- Input 3
+x = 0
+y = x;
+z = ---(x+y);
+
+- Output 3
+error
+
+- Input 4
+x = 1;
+y = 2;
+z = ---(x+y)*(x+-y);
+
+- Output 4
+x = 1
+y = 2
+z = 3
