@@ -10,7 +10,8 @@ The following defines a simple language, in which a program consists of assignme
 3. perform the assignments if there is no error and print out the values of all the variables after all the assignments are done.
 
 ## Program: 
-        Assignment*
+    Program:
+	    Assignment*
   
     Assignment:
         Identifier = Exp;
@@ -41,7 +42,7 @@ The following defines a simple language, in which a program consists of assignme
 
 ## Sample inputs and outputs
 - Input 1
-x = 001;
+    x = 001;
 
 - Output 1
 error
