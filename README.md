@@ -1,6 +1,8 @@
 # CISC 3160 Programming Languages
 Prof. Neng-Fa Zhou
 [I'm an inline-style link](http://www.sci.brooklyn.cuny.edu/~zhou/teaching/cis3160/project.html)
+[link text itself]: http://www.reddit.com
+[project link] (http://www.sci.brooklyn.cuny.edu/~zhou/teaching/cis3160/project.html)
 
 ## The Toy Language Interpreter Project
 By Cai Lin
