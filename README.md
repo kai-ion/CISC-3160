@@ -42,6 +42,7 @@ The following defines a simple language, in which a program consists of assignme
 
 ## Sample inputs and outputs
 - Input 1
+    
     x = 001;
 
 - Output 1
