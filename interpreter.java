@@ -16,7 +16,13 @@ public class interpreter {
      */
     public void read(Scanner sc){
         while(sc.hasNextLine()) {
-            interpreter(sc.nextLine());
+            String line = sc.nextLine().trim();
+
+            while (line.length() == 0) {
+                line = sc.nextLine().trim();
+            }
+
+            interpreter(line);
             assignment();
         }
     }
@@ -213,7 +219,7 @@ public class interpreter {
         if (inputToken == token) {
             nextToken();
         } else {
-            throw new RuntimeException("Missing Parenthesis");    // throw a RuntimeException if the closing Parenthesis is missing
+            throw new RuntimeException("Missing Closing Parenthesis");    // throw a RuntimeException if the closing Parenthesis is missing
         }
     }
 
@@ -243,10 +249,11 @@ public class interpreter {
         }
         return t3;
     }
+    
     public static void main(String args[]) {
 
         /**
-         * Input files paramete --> input.txt - input4.txt
+         * Input files parameter --> input.txt - input4.txt
          */
 
         try {
