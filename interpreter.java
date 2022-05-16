@@ -51,7 +51,7 @@ public class interpreter {
         char c;
 
         if(s.charAt(s.length() - 1) != ';') {
-            throw new RuntimeException("Missing ';' token exptected");
+            throw new RuntimeException("Error Code 1, Missing ';' token exptected");
         }
 
         c = s.charAt(currIndex++);
@@ -119,7 +119,7 @@ public class interpreter {
         if (inputToken == ';') {     
             return x;
         } else {
-            throw new RuntimeException("Missing ';' token expected ");
+            throw new RuntimeException("Error Code 2, Missing ';' token expected ");
         }
     }
 
